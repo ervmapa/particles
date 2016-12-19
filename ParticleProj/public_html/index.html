@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+body {
+    background-color: white;
+}
+        </style>
+    <head>
+
     <title>hej</title>
     <script src="particles.js"></script>
 
     <body onload="particles()">
 
-   
-</body>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<div class="rangeWrapper">
+
+<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);"> 
+
+        </p>  
+        <input type="range" name="rangeInput" min="0" max="10" onchange="updateSize(this.value);">
+
+        <p>
+        <input type="range" name="rangeInput" min="0" max="10" onchange="updateVx(this.value);">
+        </p>
+        <input type="range" name="rangeInput" min="0" max="10" onchange="updateVy(this.value);">
+
+        </p>
+</div>        
+ 
+
+
+    </body>
 </html>
 
