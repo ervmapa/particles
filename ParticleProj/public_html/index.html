@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-body {
-    background-color: white;
-}
-        </style>
-    <head>
+        <title>Palm Xmas</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="particles.js"></script>
+    </head>
+        <body onload="particles()">
 
-    <title>hej</title>
-    <script src="particles.js"></script>
+        <div id="container">
+            
+            <div id="header" class="grad1">
+                <h1>Merry Xmas</h1>
+            </div>
+            
+            <div id="content">
+                
+                <div id="nav" >
+                    <h2>Controls</h2>
+                    <p>Wind:  <input type="range" name="rangeInput" min="-5" max="5"   onchange="updateVx(this.value);"></p>
+                    <p>Gravity:  <input type="range" name="rangeInput" min="1" max="5"   onchange="updateVy(this.value);"></p>
+                    <p>Intensity:  <input type="range" name="rangeInput" min="0" max="25"   onchange="updateTextInput(this.value);"></p>
 
-    <body onload="particles()">
-
-<canvas id="myCanvas" width="200" height="100"></canvas>
-
-<div class="rangeWrapper">
-
-<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);"> 
-
-        </p>  
-        <input type="range" name="rangeInput" min="0" max="10" onchange="updateSize(this.value);">
-
-        <p>
-        <input type="range" name="rangeInput" min="0" max="10" onchange="updateVx(this.value);">
-        </p>
-        <input type="range" name="rangeInput" min="0" max="10" onchange="updateVy(this.value);">
-
-        </p>
-</div>        
- 
-
+                </div>
+                
+                <div id="Main">
+                    <canvas id="myCanvas" width="440" height="300"></canvas>
+                </div>
+                
+                
+            </div>
+    
+            <div id="footer" class="grad2">
+               Created by Mats Palm 
+                
+            </div>
+            
+        </div>
 
     </body>
 </html>

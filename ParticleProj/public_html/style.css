@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 20, 2016, 8:09:11 PM
+    Author     : mats
+*/
+
+.grad1 {
+    background: darkslateblue; /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(90deg, darkslateblue, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, darkslateblue, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, darkslateblue, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, darkslateblue, black); /* Standard syntax (must be last) */
+}
+
+.grad2 {
+    background: darkslateblue; /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(90deg, black, darkslateblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, black, darkslateblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, black, darkslateblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, black, darkslateblue); /* Standard syntax (must be last) */
+}
+
+body{
+    background-color: black;
+}
+
+#container{
+    background-color: black;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#header{
+    color: white;
+    text-align: center;
+}
+
+#content {
+    padding: 10px 10px 10px 10px;
+}
+
+#nav {
+    width: 230px;
+    float: left;
+    color: antiquewhite;
+
+}
+
+#main{
+    width: 550px;
+    float: right;
+}
+
+#footer{
+    clear: both;
+    color: white;
+    text-align: center;
+
+}
+
